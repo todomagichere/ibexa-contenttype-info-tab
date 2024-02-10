@@ -1,0 +1,8 @@
+services:
+
+    TodoMagicHere\IbexaContentTypeInfoTabBundle\Tab\ContentTypeInfoTab:
+        autowire: true
+        autoconfigure: true
+        public: false
+        tags:
+            - { name: ibexa.admin_ui.tab, group: location-view }

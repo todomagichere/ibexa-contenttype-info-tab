@@ -1,0 +1,55 @@
+{% trans_default_domain 'content_type' %}
+
+<div id="ibexa-tab-content-type-view" class="tab-pane ibexa-tab-content__pane active " role="tabpanel"
+     aria-labelledby="ibexa-tab-label-content-type-view">
+    <div class="ibexa-details">
+        <div class="ibexa-details__header">
+            <div class="ibexa-table-header ">
+                <div class="ibexa-table-header__headline" title="" data-bs-original-title="Global properties">
+                    {{ 'content_type.global_properties'|trans }}
+                </div>
+            </div>
+        </div>
+        <div class="ibexa-details__items">
+            <div class="ibexa-details__item">
+                <div class="ibexa-details__item-label ibexa-label">{{ 'content_type.sort_field.6'|trans }}</div>
+                <div class="ibexa-details__item-content">{{ content_type.identifier }}</div>
+            </div>
+            <div class="ibexa-details__item">
+                <div class="ibexa-details__item-label ibexa-label">Content type ID</div>
+                <div class="ibexa-details__item-content">{{ content_type.id }}</div>
+            </div>
+        </div>
+    </div>
+    <section class="ibexa-fieldgroup">
+        <h2 class="ibexa-fieldgroup__name">{{ 'content_type.content_field_definitions'|trans }}</h2>
+        <div class="ibexa-fieldgroup__content">
+            <div class="ibexa-scrollable-wrapper">
+                <table class="ibexa-table table">
+                    <thead>
+                    <tr class="ibexa-table__head-row">
+                        <th class="ibexa-table__header-cell ibexa-table__head-cell--field-definitions-head">
+                            <span class="ibexa-table__header-cell-text-wrapper">Name</span>
+                        </th>
+                        <th class="ibexa-table__header-cell ibexa-table__head-cell--field-definitions-head">
+                            <span class="ibexa-table__header-cell-text-wrapper">Identifier</span>
+                        </th>
+                        <th class="ibexa-table__header-cell ibexa-table__head-cell--field-definitions-head">
+                            <span class="ibexa-table__header-cell-text-wrapper">Type</span>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody class="ibexa-table__body">
+                        {% for field in content_type.fieldDefinitions %}
+                            <tr class="ibexa-table__row">
+                                <td class="ibexa-table__cell">{{ field.name }}</td>
+                                <td class="ibexa-table__cell">{{ field.identifier }}</td>
+                                <td class="ibexa-table__cell">{{ field.fieldTypeIdentifier }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</div>
