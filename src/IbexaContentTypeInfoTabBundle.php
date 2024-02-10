@@ -2,8 +2,8 @@
 
 namespace TodoMagicHere\IbexaContentTypeInfoTabBundle;
 
-use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
+use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class IbexaContentTypeInfoTabBundle extends AbstractBundle
+class IbexaContentTypeInfoTabBundle extends Bundle
 {
 }
