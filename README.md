@@ -6,11 +6,11 @@ Now you are lost because you have to click on content types and if your project 
 
 A minute has already passed and you think "such a simple action as clicking on a tab makes my day a little better".
 
-This bundle provides a tab in the location view on back office with the basic content type information
+### This bundle provides a tab in the location view on back office with the basic content type information
 
 ![imagen](https://github.com/todomagichere/ibexa-contenttype-info-tab-bundle/assets/23119890/91dc450c-149b-4cae-a560-a4b1bdabb8c8)
 
-I WANT IT!
+## I WANT IT!
 
 Dont worry dude, you just can install it with composer:
 
