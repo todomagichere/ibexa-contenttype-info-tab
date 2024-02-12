@@ -19,7 +19,7 @@
     }
   },
   "require": {
-    "php": "^8.0",
+    "php": "^7.1 || ^8.0",
     "ibexa/admin-ui": "~4.1.0",
     "symfony/framework-bundle": "^5.0",
     "symfony/twig-bundle": "^5.0"
