@@ -1,7 +1,7 @@
 {
   "name": "todomagichere/ibexa-contenttype-info-tab",
   "type": "symfony-bundle",
-  "version": "v1.0.9",
+  "version": "v1.1.0",
   "description": "This bundle provides a tab in the location view on back office with the basic content type information",
   "keywords": [ "ibexa", "tab", "content"],
   "homepage": "https://infinitumdigital.net/",
@@ -19,7 +19,7 @@
     }
   },
   "require": {
-    "ibexa/admin-ui": "^4.1"
+    "ibexa/admin-ui": ">=4.1,<4.4"
   },
   "config": {
     "sort-packages": true
