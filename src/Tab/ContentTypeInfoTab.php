@@ -46,6 +46,7 @@ class ContentTypeInfoTab extends AbstractTab implements OrderedTabInterface
     {
         return $this->twig->render('@IbexaContentTypeInfoTab/content_type_info_tab.html.twig', [
             'content_type' => $parameters['contentType'],
+            'content_type_group_id' => $parameters['contentType']->contentTypeGroups[0]->id,
         ]);
     }
 
